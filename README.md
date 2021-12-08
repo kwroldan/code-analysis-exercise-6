@@ -36,4 +36,3 @@ function (numbers){
 * Contains a plausible collection of test cases
 * Outputs are accurately derived from inputs
 * Summary is plausible
-  * Official answer is that it takes an array of numbers, squares each one of them, and sums them all together
