@@ -7,10 +7,16 @@ Your task is to figure out how this code works.
 * Keep coming up with new inputs until you're confident until you're confident that you know how the function works.
 * Write a summary of what the function does.
 
+*Summary*
+1) The function takes some number value and first evaluates `let sum = 0`. 
+2) A `for...each` loop occurs and redefines `sum` to be `sum + number**2` , which would be `sum = 0 + number**2`. 
+3) The function returns `sum`; however, the `sum` inside `for (number each numbers)` is not in scope.
+4) The function will always return `sum = 0`.
+
 ```js
 function (numbers){
   let sum = 0
-  for (number in numbers){
+  for (number each numbers){
     sum = sum + number**2
   }
 
@@ -20,14 +26,14 @@ function (numbers){
 
 | Input | Output |
 | ----- | ------ |
-|       |        | 
-|       |        | 
-|       |        | 
+| 123   |  0     | 
+| 5     |  0     | 
+| -3    |  0     | 
 
 <table>
   <tr>
     <th>What does this program do?</th>
-    <td></td>
+    <td>The program returns 0 no matter the input.</td>
   </tr>
 </table>
 
